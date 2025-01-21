@@ -1,0 +1,3 @@
+# Intermittent Server Delays in Node.js Application
+
+This repository demonstrates a subtle bug in a Node.js HTTP server that leads to intermittent delays or hangs, particularly under sustained load or after periods of inactivity. The issue is related to how the event loop handles asynchronous operations and resource management.  The solution provides a fix by using proper event listeners for request errors and adding keep-alive timeout settings, preventing the server from becoming unresponsive.
